@@ -16,13 +16,14 @@
 <body>
 
     <div class="container-fluid">
-        <div class="row">
+        <div class="row w-100">
             <div class="col-md-3 col-menu" >
-              <h2><strong><em>Welcome,</em> Cassius</strong></h2>
+              <h2 class="welcome-user"><strong><em>Welcome,</em> Cassius</strong></h2>
               <div class="profile">
-                <img src = person-circle.svg alt= "profile" width="40" height="40"></span>
+                <img src="pfp.PNG" class="img-circle user-pic" alt="profile-pic" width="30" height="50"></span>
               </div>
-              <button class="btn btn-warning" type="menu">Compose</button>
+              <button class="btn btn-warning btn-compose type="menu">Compose</button>
+              <span><button class="btn btn-warning pencil-square type="menu"><img src= pencil-square.svg width="20" height="20"></button></span>
                   <div id="menu-wrapper">
                     <button class="btn d-md-none" type="button" data-toggle="collapse" data-target="#bd-docs-nav" aria-controls="bd-docs-nav" aria-expanded="false" aria-label="Toggle nav bar">
                           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30" width="30" height="30" focusable="false">
@@ -42,13 +43,13 @@
                       <li class="list-group-item" button type="button" class="btn btn-primary position-relative">
                         Sent</li>
                       <li class="list-group-item" button type="button" class="btn btn-primary position-relative">
-                          <img src= content-writing.png alt= "drafts" width="20" height="20"> Drafts</li>
+                          <img src= content-writing.png alt= "drafts" width="20" height="20" style="margin-right: 2px;"> Drafts</li>
                       <li class="list-group-item" button type="button" class="btn btn-primary position-relative">
-                        Important (7)</span></li>
+                        Important (7)</li>
                       <li class="list-group-item" button type="button" class="btn btn-primary position-relative">
-                        <img src = spam.png alt= "Spam" width="20" height="20">Spam (23)</span></li>
+                        <img src = spam.png alt= "Spam" width="20" height="20" style="margin-right: 2px;">Spam (23)</li>
                       <li class="list-group-item" button type="button" class="btn btn-primary position-relative">
-                        <img src = trash.png alt= "trash" width="20" height="20">Trash</li>
+                        <img src = trash.png alt= "trash" width="20" height="20" style="margin-right: 2px;"">Trash</li>
                       </ul>
                     </div>
                   </nav>
@@ -59,7 +60,7 @@
                 <nav class="search-bar">
                     <form class="d-flex">
                       <input class="form-control me-2 search-bar" type="search" placeholder="Search mail" aria-label="Search..">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
+                      <button class="btn btn-success" type="submit">Search</button>
                     </form>
                 </nav>
                 <h4>Messages</h4>
@@ -89,10 +90,10 @@
             </div>
             
             <!--New Message Column-->
-              <div class="col-md-6 col-new-message" >
-                <div class="card" style="width: 18rem;">
-                  <div><button type="button" class="btn-close" aria-label="Close"></button></div>
-                  <div class="card-header">New Message</div>
+              <div class="col-md-5 col-new-message" >
+                <div class="card" width: "26rem";>
+                  <div><button type="button" class="btn-close" aria-label="Close" ></button></div>
+                  <div class="card-header" style="background-color: #4c8e4ced"><font color="white">New Message</font></div>
                   <div class="form-group">
                     <label for="usr">From:</label>
                     <input type="text" class="form-control" id="usr">
@@ -108,7 +109,7 @@
                     <button type="button" class="btn btn-sm"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-paperclip" viewBox="0 0 16 16">
                       <path d="M4.5 3a2.5 2.5 0 0 1 5 0v9a1.5 1.5 0 0 1-3 0V5a.5.5 0 0 1 1 0v7a.5.5 0 0 0 1 0V3a1.5 1.5 0 1 0-3 0v9a2.5 2.5 0 0 0 5 0V5a.5.5 0 0 1 1 0v7a3.5 3.5 0 1 1-7 0V3z"/>
                     </svg>
-                  </button>
+                    </button>
                     <button type="button" class="btn btn-outline btn-sm">
                       <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-card-image" viewBox="0 0 16 16">
                         <path d="M6.002 5.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>

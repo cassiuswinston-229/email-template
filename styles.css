@@ -2,27 +2,63 @@
 for bootstrap grid.  basically when the screen
 is >=768px */
 @media (min-width: 768px){
-
+    .col-menu{
+        margin-left: 8px;
+    }
 .show-and-hide-nav {
     /* This makes my collapse nav show up
     when my screen is at a medium breakpoint
     this is so my nav can be collapsed when  */
     display: block!important;
 }
+.pencil-square{
+    display: none;
 }
+.col-new-message{
+    padding-top: 100px;
+}
+}
+@media (min-width: 577px) and (max-width: 767px) {
+    .pencil-square{
+        display: none;
+    }  
+}
+@media (max-width: 576px) {
+    .btn-compose{
+        display: none;
+    }
+    .profile {
+      display: none;
+    }
+    .btn-warning{
+        float: right;
+        margin-right: 155px;
+       padding-left: 25px;
+       padding-right: 25px;
+       align-items: center;
+        
+    }
+    .welcome-user{
+        display: none;
+    }
+    .col-menu{
+        margin-right: 100px;
+    }
+  }
 .container-fluid{
-    display: flex;
-    height:100vh;
-    width: 100vw;
+    display: flex; 
     background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url("leaves.jpg");
     background-position: center;
     background-size: cover;
-    position: absolute;
+    background-attachment: fixed;
+    min-height: 500px;
+    
 }
 .search-bar{
     font-size: small;
     min-width: calc(100% - 100px);
     justify-self: flex-start;
+    padding-top: 5px;
 }
 
 
@@ -41,33 +77,48 @@ justify-content: space-between;
     background-color: #D3D3D3;
   }
 
-.row{
-    padding-top: 40px;
+.row-w100{
+   justify-content: space-between;
 }
 .btn-warning{
     margin-bottom: 10px;
     border-radius: 20px;
-    background: linear-gradient(to right, #1f7a06, #289b09);
+    background: linear-gradient(to right, #325c32ed, #4c8e4ced);
     outline: none;
+    color: white;
 }
+
 .message-box{
     box-shadow: #180707;
 }
 .col-menu{
     background-color: #FFF;
     border-radius: 10px;
-    min-width: fit-content;
+    /*min-width: fit-content;*/
+   margin-right: 8px;
+   
 }
 .col-messages{
     background-color: #FFF;
     border-radius: 10px;
-    min-width: fit-content
-    padding-left:fit-content
-
+   /* min-width: fit-content
+    padding-left:fit-content*/
+    margin-left: 4px;
 }
+.col-new-message{
+    margin-left: 4px;
+    
+}
+.user-pic {
+    display: inline-block;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
 
 .profile{
-    padding: 15px;
+    padding-bottom: 15px;
     
 }
 .list-item-date{
@@ -79,9 +130,11 @@ justify-content: space-between;
  
 }
 .btn-send{
-    padding-right: 20px;
+    margin-right: 20px;
     margin-left: 0px;
 }
-.btn-composer-tabs{
-    
-}
+@media only screen and (max-width: 600px) {
+    .profile {
+      hidden
+    }
+  }
