@@ -47,7 +47,7 @@ justify-content: space-between;
 .btn-warning{
     margin-bottom: 10px;
     border-radius: 20px;
-    background: linear-gradient(to right, #2e9a11, #39d40d);
+    background: linear-gradient(to right, #1f7a06, #289b09);
     outline: none;
 }
 .message-box{
@@ -65,7 +65,23 @@ justify-content: space-between;
     padding-left:fit-content
 
 }
+
 .profile{
     padding: 15px;
+    
+}
+.list-item-date{
+    float: right;
+    padding-bottom: 25px;
+}
+.btn-close{
+    float: right;
+ 
+}
+.btn-send{
+    padding-right: 20px;
+    margin-left: 0px;
+}
+.btn-composer-tabs{
     
 }
